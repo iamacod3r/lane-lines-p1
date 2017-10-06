@@ -16,11 +16,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-Reflection
-
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describe your pipeline. As part of the description, explain how you modified the drawLines() function.
 
 In order to find lane line I prepared two main functions. These are processVideo and processImage() functions. 
 
@@ -36,9 +32,5 @@ Last step using drawLines() function I draw left and right lane lines and combin
 Pipeline drawLines lines on the output images:
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg"
+[image2]: ./test_images/output/solidWhiteCurve.jpg 
