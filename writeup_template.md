@@ -14,6 +14,22 @@ The goals / steps of this project are the following:
 
 ---
 
+[//]: # (Image References)
+
+[whiteCurve]: ./test_images/solidWhiteCurve.jpg "solidWhiteCurve - original"
+[whiteCurveOutput]: ./test_images/output/solidWhiteCurve.jpg "solidWhiteCurve - output"
+[whiteRight]: ./test_images/solidWhiteRight.jpg "solidWhiteRight - original"
+[whiteRightOutput]: ./test_images/output/solidWhiteRight.jpg "solidWhiteRight - output"
+[yellowCurve]: ./test_images/solidYellowCurve.jpg "solidYellowCurve - original"
+[yellowCurveOutput]: ./test_images/output/solidYellowCurve.jpg "solidYellowCurve - output"
+[yellowCurve2]: ./test_images/solidYellowCurve2.jpg "solidYellowCurve2 - original"
+[yellowCurve2Output]: ./test_images/output/solidYellowCurve2.jpg "solidYellowCurve2 - output"
+[yellowLeft]: ./test_images/solidYellowLeft.jpg "solidYellowLeft - original"
+[yellowLeftOutput]: ./test_images/output/solidYellowLeft.jpg "solidYellowLeft - output"
+[whiteSwitch]: ./test_images/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch - original"
+[whiteSwitchOutput]: ./test_images/output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch - output"
+
+
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the drawLines() function.
@@ -30,7 +46,16 @@ processImage function then first converts the HLS color field by calling the pro
 Last step using drawLines() function I draw left and right lane lines and combine with the original image.
 
 Pipeline drawLines lines on the output images:
-[//]: # (Image References)
+![alt text][whiteCurve]
+![alt text][whiteCurveOutput]
+![alt text][whiteRight]
+![alt text][whiteRightOutput]
+![alt text][yellowCurve]
+![alt text][yellowCurveOutput]
+![alt text][yellowCurve2]
+![alt text][yellowCurve2Output]
+![alt text][yellowLeft]
+![alt text][yellowLeftOutput]
+![alt text][whiteSwitch]
+![alt text][whiteSwitchOutput]
 
-[image1]: ./test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg"
-[image2]: ./test_images/output/solidWhiteCurve.jpg 
