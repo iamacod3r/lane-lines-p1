@@ -12,36 +12,33 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 ---
 
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+Reflection
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+In order to find lane line I prepared two main functions. These are processVideo and processImage() functions. 
 
-![alt text][image1]
+processVideo function is read the video file and video images send to processImage function.
 
+processImage function is consisted with all required the image process functions.
+This function return to back with processed image.
 
-### 2. Identify potential shortcomings with your current pipeline
+processImage function then first converts the HLS color field by calling the processWhiteYellow function. The white and yellow color areas are found separately on the image. It combines these masks and applies them on the image. With the grayScale function, I got the color channel I need in the image. I reduced the noise on the image with the Gaussian Blur function. I applied Canny transform with canny function. With the regionOfInterest function I have specified the areas of interest on the image. I have specified lines with the houghLines function. I use the laneLines and averageLine functions to determine the slopes, lengths, line numbers of the left and right lanes, and to fit the image.
 
+Last step using drawLines() function I draw left and right lane lines and combine with the original image.
 
-One potential shortcoming would be what would happen when ... 
+Pipeline drawLines lines on the output images:
+[//]: # (Image References)
 
-Another shortcoming could be ...
+[image1]: ./examples/grayscale.jpg "Grayscale"
 
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/grayscale.jpg "Grayscale"
