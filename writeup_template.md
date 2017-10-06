@@ -33,20 +33,6 @@ The goals / steps of this project are the following:
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the drawLines() function.
-<<<<<<< HEAD
-
-In order to find lane line I prepared two main functions. These are processVideo and processImage() functions. 
-
-processVideo function is read the video file and video images send to processImage function.
-
-processImage function is consisted with all required the image process functions.
-This function return to back with processed image.
-
-processImage function then first converts the HLS color field by calling the processWhiteYellow function. The white and yellow color areas are found separately on the image. It combines these masks and applies them on the image. With the grayScale function, I got the color channel I need in the image. I reduced the noise on the image with the Gaussian Blur function. I applied Canny transform with canny function. With the regionOfInterest function I have specified the areas of interest on the image. I have specified lines with the houghLines function. I use the laneLines and averageLine functions to determine the slopes, lengths, line numbers of the left and right lanes, and to fit the image.
-
-Last step using drawLines() function I draw left and right lane lines and combine with the original image.
-drawLines() except a list of lines as the second parameter. Each line is a list of 4 values (x1, y1, x2, y2). The data type needs to be integer for cv2.line to work without throwing an error.
-=======
 
 In order to find lane line I prepared two main functions. These are processVideo and processImage() functions. 
 
@@ -61,21 +47,7 @@ Last step using drawLines() function I draw left and right lane lines and combin
 drawLines() except a list of lines as the second parameter. Each line is a list of 4 values (x1, y1, x2, y2). The data type needs to be integer for cv2.line to work without throwing an error.
 
 Pipeline drawLines lines on the output images:
-![alt text][whiteCurve]
-![alt text][whiteCurveOutput]
-![alt text][whiteRight]
-![alt text][whiteRightOutput]
-![alt text][yellowCurve]
-![alt text][yellowCurveOutput]
-![alt text][yellowCurve2]
-![alt text][yellowCurve2Output]
-![alt text][yellowLeft]
-![alt text][yellowLeftOutput]
-![alt text][whiteSwitch]
-![alt text][whiteSwitchOutput]
->>>>>>> e283e830d9b066aa2778be6bc3edc124cc3b0081
 
-Pipeline drawLines lines on the output images:
 ![alt text][whiteCurve]
 ![alt text][whiteCurveOutput]
 ![alt text][whiteRight]
@@ -89,19 +61,10 @@ Pipeline drawLines lines on the output images:
 ![alt text][whiteSwitch]
 ![alt text][whiteSwitchOutput]
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e283e830d9b066aa2778be6bc3edc124cc3b0081
 ### 2. Identify potential shortcomings with your current pipeline
 
 Right lane line should be more stable.
 
 ### 3. Suggest possible improvements to your pipeline
 
-<<<<<<< HEAD
 It only detects the straight lane lines. It is an advanced topic to handle curved lanes (or the curvature of lanes). We'll need to use perspective transformation and also poly fitting lane lines rather than fitting to straight lines.
-=======
-It only detects the straight lane lines. It is an advanced topic to handle curved lanes (or the curvature of lanes). We'll need to use perspective transformation and also poly fitting lane lines rather than fitting to straight lines.
-
->>>>>>> e283e830d9b066aa2778be6bc3edc124cc3b0081
