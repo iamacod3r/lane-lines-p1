@@ -1,12 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-Test Commit
 
 **Finding Lane Lines on the Road**
 
@@ -34,9 +27,9 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the drawLines() function.
+### 1. Description
 
-In order to find lane line I prepared two main functions. These are processVideo and processImage() functions. 
+In order to find lane line I prepared two main functions. These are processVideo() and processImage() functions. 
 
 processVideo function is read the video file and video images send to processImage function.
 
@@ -63,10 +56,10 @@ Pipeline drawLines lines on the output images:
 ![alt text][whiteSwitch]
 ![alt text][whiteSwitchOutput]
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings
 
 Right lane line should be more stable.
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Suggestions
 
 It only detects the straight lane lines. It is an advanced topic to handle curved lanes (or the curvature of lanes). We'll need to use perspective transformation and also poly fitting lane lines rather than fitting to straight lines.
