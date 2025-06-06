@@ -1,0 +1,39 @@
+# Lane Detection Project Dependencies - Updated to Latest Versions
+# Core scientific computing
+numpy>=2.2.6
+matplotlib>=3.10.0
+
+# Computer Vision
+opencv-python>=4.11.0
+opencv-contrib-python>=4.11.0
+
+# Video processing
+moviepy>=2.2.1
+
+# Jupyter and IPython
+jupyter>=1.1.1
+ipython>=9.3.0
+notebook>=7.4.3
+jupyterlab>=4.4.3
+
+# Image processing and utilities
+Pillow>=11.2.1
+imageio>=2.37.0
+imageio-ffmpeg>=0.6.0
+
+# Data science utilities
+pandas>=2.3.0
+scipy>=1.15.3
+
+# Progress bars and utilities
+tqdm>=4.67.1
+
+# For better plots
+seaborn>=0.13.2
+
+# Additional useful packages
+scikit-image>=0.25.2
+ffmpeg-python>=0.2.0
+
+# Collections (built-in module, no installation needed)
+# os (built-in module, no installation needed) 
