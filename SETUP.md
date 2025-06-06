@@ -4,7 +4,7 @@ This project implements lane line detection for self-driving cars using computer
 
 ## Prerequisites
 
-- Python 3.7 or higher
+- Python 3.11 or higher
 - Git (for cloning the repository)
 
 ## Setup Options
@@ -13,7 +13,7 @@ This project implements lane line detection for self-driving cars using computer
 
 1. **Clone the repository** (if not already done):
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:iamacod3r/lane-lines-p1.git
    cd lane-lines-p1
    ```
 
